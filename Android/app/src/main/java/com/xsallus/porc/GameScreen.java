@@ -20,6 +20,14 @@ public class GameScreen extends AppCompatActivity {
     Card pCard;
     Card cCard;
 
+    String pcard;
+    String ccard;
+
+    Integer score;
+
+    Integer player;
+    Integer cpu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,27 +44,27 @@ public class GameScreen extends AppCompatActivity {
         cCard = new Card();
 
         deal.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                String pcard = pCard.geraCard();
-                String ccard = cCard.geraCard();
+
+                pcard = pCard.geraCard();
+                ccard = cCard.geraCard();
 
                 player_card.setBackgroundResource(getResources().getIdentifier(pcard, "drawable", getPackageName()));
                 cpu_card.setBackgroundResource(getResources().getIdentifier(ccard, "drawable", getPackageName()));
 
-                int player = pCard.getNum();
-                int cpu = cCard.getNum();
-
-                Integer pScore = Integer.parseInt(player_score.getText().toString());
-                Integer cScore = Integer.parseInt(cpu_score.getText().toString());
+                player = pCard.getNum();
+                cpu = cCard.getNum();
 
                 if(player > cpu) {
-                    //player_score.setText(Integer.parseInt(player_score.getText().toString())+1);
-                    player_score.setText((char) (player+1));
-                } else if(player < cpu) {
-                    //cpu_score.setText(Integer.parseInt(cpu_score.getText().toString())+1);
-                    cpu_score.setText((char) (cScore+1));
+                    score = (Integer.parseInt(player_score.getText().toString())+1);
+                    player_score.setText(score.toString());
+                } else if (player < cpu) {
+                    score = (Integer.parseInt(cpu_score.getText().toString())+1);
+                    cpu_score.setText(score.toString());
                 }
+
             }
         });
 
