@@ -68,16 +68,16 @@ public class GameScreen extends AppCompatActivity {
             }
         });
 
-        /*reload.setOnClickListener(new View.OnClickListener() {
+        reload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 player_card.setBackground(getDrawable(R.drawable.back_card));
                 cpu_card.setBackground(getDrawable(R.drawable.back_card));
 
-                cpu_score.setText('0');
-                player_score.setText('0');
+                cpu_score.setText("0");
+                player_score.setText("0");
             }
-        });*/
+        });
     }
 
 }
