@@ -12,18 +12,20 @@
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="36dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/player_card"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginEnd="12sp"
             android:background="@drawable/back_card" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cpu_card"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/back_card" />
@@ -31,6 +33,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/deal_btn"
         android:layout_width="126sp"
         android:layout_height="45sp"
         android:layout_marginStart="8dp"
@@ -96,6 +99,16 @@
             android:textColor="@android:color/white"
             android:textSize="24sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/refresh_btn"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="316dp"
+        android:background="@drawable/ic_replay"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
