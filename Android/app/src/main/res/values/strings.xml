@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Presidente ou CU</string>
-
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="deal_button">Deal</string>
+    <string name="cpu_score">0</string>
+    <string name="player_score">0</string>
+    <string name="cpu">CPU</string>
+    <string name="player">Player</string>
 </resources>
