@@ -7,121 +7,54 @@
     android:background="@drawable/menu_bkg"
     tools:context=".GameScreen">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="36dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/player_card"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="12sp"
-            android:background="@drawable/back_card" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/cpu_card"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/back_card" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/deal_btn"
-        android:layout_width="126sp"
-        android:layout_height="45sp"
-        android:layout_marginStart="8dp"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/smpplayer"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="68dp"
         android:background="@drawable/rounded_shape"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="@string/deal_button"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/simpleplayer"
         android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
-    <LinearLayout
-        android:id="@+id/player_score"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sngplayer"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/rounded_shape"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/singleplayer"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/more_btn"
+        android:background="@drawable/ic_more_vert"
+        android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="35dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline2">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/player"
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/player_scoreLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textAlignment="viewStart"
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/cpu_score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="176dp"
-        android:layout_marginStart="200dp"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline2">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cpu"
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/cpu_scoreLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textAlignment="viewEnd"
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/refresh_btn"
-        android:layout_width="35sp"
-        android:layout_height="35sp"
-        android:layout_marginStart="228dp"
-        android:layout_marginBottom="316dp"
-        android:background="@drawable/ic_replay"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        android:layout_marginStart="272dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="131dp" />
+        app:layout_constraintGuide_begin="93dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+        android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="369dp" />
+        app:layout_constraintGuide_begin="220dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

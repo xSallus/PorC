@@ -6,4 +6,8 @@
     <string name="cpu">CPU</string>
     <string name="player">Player</string>
     <string name="anim">Default splash screen animation</string>
+    <string name="singleplayer">Single Player</string>
+    <string name="simpleplayer">Simple Player</string>
+    <string name="someplayers">Multplayer Local</string>
+    <string name="manyplayers">Multplayer Online</string>
 </resources>
