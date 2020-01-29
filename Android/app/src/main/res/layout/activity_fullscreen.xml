@@ -5,4 +5,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/menu_bkg"
     tools:context=".FullscreenActivity">
+    <ImageView
+        android:id="@+id/animation"
+        android:contentDescription="@string/anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 </FrameLayout>

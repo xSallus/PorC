@@ -5,4 +5,5 @@
     <string name="player_score">0</string>
     <string name="cpu">CPU</string>
     <string name="player">Player</string>
+    <string name="anim">Default splash screen animation</string>
 </resources>
