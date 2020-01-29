@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SimplePlayer"></activity>
-        <activity android:name=".GameScreen" />
+        <activity android:name=".SinglePlayer" android:theme="@style/FullscreenTheme"></activity>
+        <activity android:name=".SimplePlayer" />
+        <activity android:name=".GameScreen" >
+            <intent-filter>
+                <category android:name="android.intent.category.HOME"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

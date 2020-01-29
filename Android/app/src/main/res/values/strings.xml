@@ -10,4 +10,5 @@
     <string name="simpleplayer">Simple Player</string>
     <string name="someplayers">Multplayer Local</string>
     <string name="manyplayers">Multplayer Online</string>
+    <string name="player_cards">Player cards</string>
 </resources>

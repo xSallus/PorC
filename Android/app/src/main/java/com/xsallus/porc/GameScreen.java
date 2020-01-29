@@ -10,7 +10,7 @@ import android.widget.Button;
 public class GameScreen extends AppCompatActivity {
 
     Button simple;
-    //Button single;
+    Button single;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +26,13 @@ public class GameScreen extends AppCompatActivity {
             }
         });
 
-        //Single Player Game Button Implementation
-       /* single = findViewById(R.id.sngplayer);
+        single = findViewById(R.id.sngplayer);
         single.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(GameScreen.this, SinglePlayer.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }
