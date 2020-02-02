@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SinglePlayer" android:theme="@style/FullscreenTheme"></activity>
+        <activity android:name=".SinglePlayer" android:theme="@style/FullscreenTheme" android:screenOrientation="landscape"/>
         <activity android:name=".SimplePlayer" />
         <activity android:name=".GameScreen" >
             <intent-filter>
