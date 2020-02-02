@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.view.View;
 
 public class MyOnDragListener implements View.OnDragListener {
+    @SuppressWarnings("DuplicateBranchesInSwitch")
     @Override
     public boolean onDrag(View v, DragEvent event) {
         int action = event.getAction();
@@ -34,6 +35,7 @@ public class MyOnDragListener implements View.OnDragListener {
                 ViewGroup owner = (ViewGroup) view.getParent();
                 owner.removeView(view);
                 LinearLayout container = (LinearLayout) v;
+                container.removeAllViews();
                 container.addView(view);
                 view.setVisibility(View.VISIBLE);
                 break;
