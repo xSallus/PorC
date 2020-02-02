@@ -1,33 +1,26 @@
 package com.xsallus.porc;
 
+import com.xsallus.porc.listeners.MyOnLongClickListener;
+import com.xsallus.porc.listeners.MyOnDragListener;
 import androidx.appcompat.app.AppCompatActivity;
-import android.widget.ImageView;
 import android.os.Bundle;
 import android.view.View;
 
 public class SinglePlayer extends AppCompatActivity {
-
-    ImageView card1;
-    ImageView card2;
-    ImageView card3;
-    ImageView card4;
-    ImageView card5;
-    ImageView card6;
-    ImageView card7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.single_player);
 
-        card1 = findViewById(R.id.pcard1);
-        card2 = findViewById(R.id.pcard2);
-        card3 = findViewById(R.id.pcard3);
-        card4 = findViewById(R.id.pcard4);
-        card5 = findViewById(R.id.pcard5);
-        card6 = findViewById(R.id.pcard6);
-        card7 = findViewById(R.id.pcard7);
-
+        findViewById(R.id.drop_card_container).setOnDragListener(new MyOnDragListener());
+        findViewById(R.id.pcard1).setOnLongClickListener(new MyOnLongClickListener());
+        findViewById(R.id.pcard2).setOnLongClickListener(new MyOnLongClickListener());
+        findViewById(R.id.pcard3).setOnLongClickListener(new MyOnLongClickListener());
+        findViewById(R.id.pcard4).setOnLongClickListener(new MyOnLongClickListener());
+        findViewById(R.id.pcard5).setOnLongClickListener(new MyOnLongClickListener());
+        findViewById(R.id.pcard6).setOnLongClickListener(new MyOnLongClickListener());
+        findViewById(R.id.pcard7).setOnLongClickListener(new MyOnLongClickListener());
     }
 
     @Override

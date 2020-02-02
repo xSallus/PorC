@@ -1,11 +1,10 @@
 package com.xsallus.porc;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.widget.Button;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class GameScreen extends AppCompatActivity {
 
