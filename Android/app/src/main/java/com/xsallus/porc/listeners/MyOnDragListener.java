@@ -33,11 +33,16 @@ public class MyOnDragListener implements View.OnDragListener {
             case DragEvent.ACTION_DROP:
                 View view = (View) event.getLocalState();
                 ViewGroup owner = (ViewGroup) view.getParent();
-                owner.removeView(view);
                 LinearLayout container = (LinearLayout) v;
-                container.removeAllViews();
-                container.addView(view);
-                view.setVisibility(View.VISIBLE);
+                if(container != owner) {
+                    owner.removeView(view);
+                    container.removeAllViews();
+                    container.addView(view);
+                    view.setVisibility(View.VISIBLE);
+                } else {
+                    owner.addView(view);
+                    view.setVisibility(View.VISIBLE);
+                }
                 break;
 
             case DragEvent.ACTION_DRAG_ENDED:
