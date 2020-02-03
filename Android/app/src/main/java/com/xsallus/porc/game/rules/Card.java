@@ -1,4 +1,4 @@
-package com.xsallus.porc;
+package com.xsallus.porc.game.rules;
 
 import java.util.Random;
 

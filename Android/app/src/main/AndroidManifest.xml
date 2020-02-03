@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SinglePlayer" android:theme="@style/FullscreenTheme" android:screenOrientation="landscape"/>
-        <activity android:name=".SimplePlayer" android:screenOrientation="portrait" />
-        <activity android:name=".GameScreen" android:screenOrientation="portrait" >
+        <activity android:name=".game.screens.SinglePlayer" android:theme="@style/FullscreenTheme" android:screenOrientation="landscape"/>
+        <activity android:name=".game.screens.SimplePlayer" android:screenOrientation="portrait" />
+        <activity android:name=".game.screens.GameScreen" android:screenOrientation="portrait" >
             <intent-filter>
                 <category android:name="android.intent.category.HOME"/>
 
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FullscreenActivity"
+            android:name=".game.screens.FullscreenActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"

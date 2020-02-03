@@ -1,9 +1,11 @@
-package com.xsallus.porc;
+package com.xsallus.porc.game.screens;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.xsallus.porc.game.rules.Card;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Button;
+import com.xsallus.porc.R;
 import android.os.Bundle;
 import android.view.View;
 

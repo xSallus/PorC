@@ -4,11 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/menu_bkg"
-    tools:context=".FullscreenActivity">
+    tools:context=".game.screens.FullscreenActivity">
+
     <ImageView
         android:id="@+id/animation"
         android:contentDescription="@string/anim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/publisher"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="700dp"
+        android:layout_marginStart="130dp"
+        android:fontFamily="sans-serif-condensed-light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/licensing"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:layout_marginTop="726dp"
+        android:layout_marginStart="155dp"
+        android:fontFamily="sans-serif-condensed-light"/>
+
 </FrameLayout>

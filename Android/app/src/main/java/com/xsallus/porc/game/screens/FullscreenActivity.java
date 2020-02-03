@@ -1,10 +1,11 @@
-package com.xsallus.porc;
+package com.xsallus.porc.game.screens;
 
 import android.graphics.drawable.AnimationDrawable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.content.Intent;
 import android.os.Handler;
+import com.xsallus.porc.R;
 import android.os.Bundle;
 import android.view.View;
 

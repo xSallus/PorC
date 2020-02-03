@@ -1,10 +1,12 @@
-package com.xsallus.porc;
+package com.xsallus.porc.game.screens;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.widget.Button;
 import android.os.Bundle;
 import android.view.View;
+
+import com.xsallus.porc.R;
 
 public class GameScreen extends AppCompatActivity {
 

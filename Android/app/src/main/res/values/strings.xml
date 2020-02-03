@@ -11,4 +11,6 @@
     <string name="someplayers">Multplayer Local</string>
     <string name="manyplayers">Multplayer Online</string>
     <string name="player_cards">Player cards</string>
+    <string name="publisher">An xSallus Project </string>
+    <string name="licensing">All rights reserved™</string>
 </resources>
