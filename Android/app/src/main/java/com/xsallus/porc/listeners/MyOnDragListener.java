@@ -7,6 +7,8 @@ import android.view.DragEvent;
 import android.view.ViewGroup;
 import android.view.View;
 
+import com.xsallus.porc.R;
+
 public class MyOnDragListener implements View.OnDragListener {
     @SuppressWarnings("DuplicateBranchesInSwitch")
     @Override
@@ -20,7 +22,7 @@ public class MyOnDragListener implements View.OnDragListener {
                 return(false);
 
             case DragEvent.ACTION_DRAG_ENTERED:
-                v.setBackgroundColor(Color.YELLOW);
+                v.setBackgroundColor(Color.GREEN);
                 break;
 
             case DragEvent.ACTION_DRAG_LOCATION:
