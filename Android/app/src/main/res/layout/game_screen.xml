@@ -7,54 +7,41 @@
     android:background="@drawable/menu_bkg"
     tools:context=".game.screens.GameScreen">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/smpplayer"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="68dp"
-        android:background="@drawable/rounded_shape"
-        android:backgroundTint="@android:color/holo_green_dark"
-        android:text="@string/simpleplayer"
-        android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/sngplayer"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="172dp"
-        android:background="@drawable/rounded_shape"
-        android:backgroundTint="@android:color/holo_green_dark"
-        android:text="@string/singleplayer"
-        android:textColor="@android:color/white"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/more_btn"
-        android:background="@drawable/ic_more_vert"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="272dp"
-        android:layout_marginBottom="164dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="93dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="220dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/more_btn"
+            android:background="@drawable/ic_more_vert"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="365dp"
+            android:layout_marginTop="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/smpplayer"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="188dp"
+            android:background="@drawable/rounded_shape"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="@string/simpleplayer"
+            android:textColor="@android:color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sngplayer"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rounded_shape"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="@string/singleplayer"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
