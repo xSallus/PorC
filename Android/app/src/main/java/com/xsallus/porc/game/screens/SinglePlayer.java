@@ -26,6 +26,8 @@ public class SinglePlayer extends AppCompatActivity {
         findViewById(R.id.pcard7).setBackgroundResource(getResources().getIdentifier(pcard.geraCard(), "drawable", getPackageName()));
 
         findViewById(R.id.drop_card_container).setOnDragListener(new MyOnDragListener());
+        findViewById(R.id.single_play_view).setOnDragListener(new MyOnDragListener());
+
         findViewById(R.id.pcard1).setOnLongClickListener(new MyOnLongClickListener());
         findViewById(R.id.pcard2).setOnLongClickListener(new MyOnLongClickListener());
         findViewById(R.id.pcard3).setOnLongClickListener(new MyOnLongClickListener());

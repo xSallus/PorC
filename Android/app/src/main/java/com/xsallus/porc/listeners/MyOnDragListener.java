@@ -7,7 +7,7 @@ import android.view.DragEvent;
 import android.view.ViewGroup;
 import android.view.View;
 
-import com.xsallus.porc.R;
+//cd C:\Users\55929\Desktop\PorC
 
 public class MyOnDragListener implements View.OnDragListener {
     @SuppressWarnings("DuplicateBranchesInSwitch")
@@ -35,16 +35,11 @@ public class MyOnDragListener implements View.OnDragListener {
             case DragEvent.ACTION_DROP:
                 View view = (View) event.getLocalState();
                 ViewGroup owner = (ViewGroup) view.getParent();
+                owner.removeView(view);
                 LinearLayout container = (LinearLayout) v;
-                if(container != owner) {
-                    owner.removeView(view);
-                    container.removeAllViews();
-                    container.addView(view);
-                    view.setVisibility(View.VISIBLE);
-                } else {
-                    owner.addView(view);
-                    view.setVisibility(View.VISIBLE);
-                }
+                container.removeAllViews();
+                container.addView(view);
+                view.setVisibility(View.VISIBLE);
                 break;
 
             case DragEvent.ACTION_DRAG_ENDED:
