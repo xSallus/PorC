@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_frame0" android:duration="150" />
+    <item android:drawable="@drawable/ic_frame1" android:duration="150"/>
+    <item android:drawable="@drawable/ic_frame2" android:duration="150"/>
+    <item android:drawable="@drawable/ic_frame3" android:duration="150"/>
+    <item android:drawable="@drawable/ic_frame7" android:duration="150"/>
+    <item android:drawable="@drawable/ic_frame4" android:duration="150"/>
+    <item android:drawable="@drawable/ic_frame5" android:duration="150"/>
+    <item android:drawable="@drawable/ic_frame6" android:duration="150"/>
+    <item android:drawable="@drawable/ic_frame0" android:duration="150"/>
+</animation-list>
